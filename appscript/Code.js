@@ -4,5 +4,4 @@ function LIGHTHOUSE(url) {
   var response = UrlFetchApp.fetch(request_url)
   var result = JSON.parse(response.getContentText())
   return(result.categories.performance.score * 100)
-  
 }
