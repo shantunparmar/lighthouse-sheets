@@ -2,7 +2,6 @@ const express = require('express');
 const app = express();
 const lighthouse = require('lighthouse');
 const chromeLauncher = require('chrome-launcher');
-
 app.get('/', async (req, res) => {
     if(req.query && req.query.url) {
         console.log(req.query.url)
